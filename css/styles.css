@@ -1,0 +1,19 @@
+
+
+#fullWidthBar {
+  margin: 0 -9999rem;
+  /* add back negative margin value */
+  padding: 0.25rem 9999rem;
+  background: #717883;
+  color: #fff;
+  font-size: 50px;
+  height: 100px;
+}
+.jumbotron p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+#sequence {
+  display:none;
+}
