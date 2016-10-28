@@ -40,6 +40,7 @@ function sequenceFinal(input) {
 
 
 // begin user interface
+
 $(document).ready(function() {
 
   $("#pingPongForm").submit(function(event) {
