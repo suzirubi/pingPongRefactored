@@ -12,14 +12,33 @@ function falsey2(input) {
 
 function sequenceFinal(input) {
   var length = input.toString();
-  console.log(length);
   var sequenceArray = [];
-  for ( var number = 1; number < length; number++ ) {
+  for (var number = 1; number <= length; number++ ) {
     sequenceArray.push(number);
   }
+
+  var pingArray = [];
+
+  for (var count = 0; count < length; count ++) {
+    var pingArray = sequenceArray.map(function(count) {
+      if (count % 3 === 0) {
+        return "ping";
+      } else if (count % 5 === 0){
+        return "pong";
+      } else if (count % 15 === 0){
+        return "ping-pong";
+      } else {
+        return count;
+      }
+    });
+  }
+
+console.log(pingArray);
   var output = sequenceArray;
   return output;
 }
+
+
 
 
 
