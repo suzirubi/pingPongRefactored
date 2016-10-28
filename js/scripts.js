@@ -39,9 +39,6 @@ function sequenceFinal(input) {
 
 
 
-
-
-
 // begin user interface
 $(document).ready(function() {
 
@@ -54,12 +51,11 @@ $(document).ready(function() {
     var sequence = sequenceFinal(input);
 
     if (falsey === true){
-      $(".display").show();
       $(".falsey").toggle();
-      $(".falsey").text("Ahh... now you're making it too hard, enter a whole number greater than 1!");
+      $(".falsey").text("Only Bruce Lee can handle that! Enter a whole number greater than 1.");
     } else if (falsey === false){
       $("ul").show();
-      $(".display").show();
+      $(".display").toggle();
       $(".falsey").hide();
       sequence.forEach (function(item) {
         $("ul").append("<li>" + item + "</li>");

@@ -10,33 +10,54 @@
   <body>
     <div class="container">
       <div id="fullWidthBar" class="jumbotron">
-        <h1>Ping Pong!</h1>
+        <div id="headline" class="row">
+          <div class="col-md-5">
+            <div class="flip">
+              <h1>Ping Pong</h1>
+            </div>
+          </div>
+          <div class="col-md-1">
+            <h1>|</h1>
+          </div>
+          <div class="col-md-5">
+              <div class="flop">
+            <h1>Ping Pong</h1>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="jumbotron">
         <div class="row">
-          <div class="col-md-7">
+          <div class="col-sm-7">
             <p>Enter a number greater than 1 and you'll get a sequence of numbers back that count up to that number. When the number in the sequence is divisible by 3, you'll see "ping" instead of that number. When the number is divisible by 5: "pong". If the number is divisible by both 3 and 5 (or 15 for that matter) you'll see "ping-pong". Start playing by entering a number below and clicking the PLAY! button. You can play as many times as you'd like! Just enter a new number and hit the PLAY! button again.</p>
           </div>
-          <div class="col-md-5">
-              <!-- <img src="http://i.imgur.com/rABWS5B.gif" alt="bruce lee playing ping-pong"/> -->
+          <div id="image" class="col-sm-5">
+            <img src="img/bruceLee.gif" alt="bruce lee playing ping-pong"/>
           </div>
         </div>
       </div>
       <form id="pingPongForm">
         <div class="row">
-          <div class="form-group col-md-5">
-            <!-- <label for="userInput">Enter a number greater than 1</label> -->
+          <div class="form-group col-sm-5">
+            <label for="userInput">START PLAYING PING PONG!</label>
             <input id="userInput" class="form-control" type="text" placeholder="Enter any number 1 or higher...">
           </div>
-          <div class="form-group col-md-7">
-            <button type="submit" class="btn btn-primary" value="">PLAY!</button>
+          <div class="form-group col-md-3">
+            <button type="submit" class="btn btn-primary">PLAY!</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="falsey">
+            <div class="col-md-6">
+              <p></p>
+            </div>
+            <div class="col-md-6">
+              <img id="image" src="img/bruceLee.gif" alt="bruce lee playing ping-pong"/>
+            </div>
           </div>
         </div>
         <div class="display">
-          <p>
-            <span class="falsey"></span>
-          </p>
-          <div id="#list">
+          <div id="list">
             <ul>
               <li></li>
             </ul>

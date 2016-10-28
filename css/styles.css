@@ -4,21 +4,82 @@
   margin: 0 -9999rem;
   /* add back negative margin value */
   padding: 0.25rem 9999rem;
-  background: #717883;
+  background: #666633;
   color: #fff;
   font-size: 40px;
-  height: 100px;
+  height: 200px;
 }
-.jumbotron p {
+#headline {
+  margin-top: 30px;
+}
+
+#image img {
+  width: 100%;
+}
+.jumbotron {
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 2em;
+  background-color: #CCCC99;
+  color: #000;
+  radius: 0px;
 }
 .display {
   display: none;
+  margin-top: 30px;
 }
 .falsey {
   display: none;
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 16px;
+  line-height: 2em;
+  color: #666600;
 }
 #list {
-  /*display: none;*/
+  font-size: 16px;
+  line-height: 2em;
+  color: #666600;
+}
+.flip {
+  margin-left: 80px;
+}
+.flop {
+  margin-right: 95px;
+  -moz-transform: scale(-1, 1);
+  -webkit-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+
+.btn {
+    padding: 14px 24px;
+    border: 0 none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+    background-color: #666633;
+}
+
+.btn-primary {
+  background-color: #666633;
+  height: 60px;
+  width: 110px;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+  background-color: #999900;
+}
+
+.btn-primary:active, .btn-primary.active {
+  background-color: #666600;
+  box-shadow: #CCCCCC;
+}
+
+.form-group {
+  color: #666600;
 }
