@@ -6,26 +6,31 @@ by Suzi Rubino
 ##Description
 The instructions for the requirements of this project are as follows:
 
-Create a web application that takes a number from a user and returns a range of numbers from 1 to the chosen number with the following exceptions:
+- [ ]Create a web application that takes a number from a user and returns a range of numbers from 1 to the chosen number with the following exceptions:
 
 - Numbers divisible by 3 are replaced with "ping"
 - Numbers divisible by 5 are replaced with "pong"
 - Numbers divisible by 15 are replaced with "ping-pong"
 
-A user should be able to enter a new number and see new results over and over again.
+- [ ]A user should be able to enter a new number and see new results over and over again.
 
-Break the program down into simple, individual behaviors with input/output examples. Begin with the simplest possible behavior.
+- [ ] Break the program down into simple, individual behaviors with input/output examples. Begin with the simplest possible behavior.
 
-Your code will be reviewed for the following objectives:
+_*Your code will be reviewed for the following objectives:*_
 
-JavaScript business logic and user interface logic are separate.
-Variable names are descriptive and use lower camel case (e.g. myVariableExample).
-Code has proper indentation and spacing.
-Application works as expected.
-All previous objectives have been met.
-Logic is broken down into "plain English" specs, listed in README.
-Project is in a presentable, portfolio-quality state.
-Project demonstrates understanding of this week's concepts. If prompted, you are able to discuss your code with an instructor using correct terminology.
+- [ ] JavaScript business logic and user interface logic are separate.
+- [ ] Variable names are descriptive and use lower camel case (e.g. myVariableExample).
+- [ ] Code has proper indentation and spacing.
+- [ ] Application works as expected.
+- [ ] All previous objectives have been met.
+- [ ] Logic is broken down into "plain English" specs, listed in README.
+- [ ] Project is in a presentable, portfolio-quality state.
+- [ ] Project demonstrates understanding of this week's concepts. If prompted, you are able to discuss your code with an instructor using correct terminology.
+
+##Further Exploration
+- [ ] Recreate the example layout.
+- [ ] Add images and other custom aesthetics.
+- [ ] Implement different behaviors/effects/images for different inputs.
 
 ##Specifications
 
