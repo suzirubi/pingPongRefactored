@@ -6,7 +6,7 @@
   padding: 0.25rem 9999rem;
   background: #717883;
   color: #fff;
-  font-size: 50px;
+  font-size: 40px;
   height: 100px;
 }
 .jumbotron p {
@@ -14,6 +14,6 @@
   line-height: 1.5;
 }
 
-#sequence {
+.falsey {
   display:none;
 }

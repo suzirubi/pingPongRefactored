@@ -9,7 +9,7 @@
   </head>
   <body>
     <div class="container">
-      <div id="fullWidthBar">
+      <div id="fullWidthBar" class="jumbotron">
         <h1>Ping Pong!</h1>
       </div>
       <div class="jumbotron">
@@ -21,24 +21,21 @@
               <img src="http://i.imgur.com/rABWS5B.gif" alt="bruce lee playing ping-pong"/>
           </div>
         </div>
+      </div>
+      <form id="pingPongForm">
         <div class="row">
-          <div class="col-md-5">
-            <form id="pingPongForm">
-              <div class="form-group">
-                <label for="userInput">Enter a number greater than 1</label>
-                <input id="userInput" type="text" class="form-control" placeholder="This number is where the game will end...">
-              </div>
-              <button type="submit" class="btn btn-primary">PLAY!</button>
-            </form>
+          <div class="form-group col-md-5">
+            <!-- <label for="userInput">Enter a number greater than 1</label> -->
+            <input id="userInput" class="form-control" type="text" placeholder="Enter any number 1 or higher...">
           </div>
-          <div class="col-md-7">
-            <p> &nbsp; </p>
+          <div class="form-group col-md-7">
+            <button type="submit" class="btn btn-primary" value="">PLAY!</button>
           </div>
         </div>
-        <div id="sequence">
+        <div class="falsey">
 
         </div>
-      </div>
+      </form>
     </div>
   </body>
 </html>
