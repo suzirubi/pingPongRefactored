@@ -44,7 +44,7 @@ _*Your code will be reviewed for the following objectives:*_
 
 3. Return the returned sequence of numbers displayed as a list item.
   **- Example Input: 5
-  - Example Output:
+  **- Example Output:
       - 1
       - 2
       - ping
