@@ -22,6 +22,19 @@ function falsey3(input) {
   }
 }
 
+function sequence(input) {
+  var inputWhole = parseInt(input);
+  var sequenceArray = [];
+
+
+  for (var number = 1; number <= inputWhole; ++number) {
+  	sequenceArray.push(number);
+   }
+
+   console.log(sequence);
+
+}
+
 
 // begin user interface
 $(document).ready(function() {
@@ -33,6 +46,8 @@ $(document).ready(function() {
     var false1 = falsey1(input);
     var false2 = falsey2(input);
     var false3 = falsey3(input);
+    var sequence1 = sequence(input);
+
 
     if (false1 = true) {
       $(".falsey").toggle();
@@ -44,6 +59,8 @@ $(document).ready(function() {
       $(".falsey").toggle();
       $(".falsey").text("JUST numbers greater than 1");
     }
+    console.log(sequence1);
+
       // groceryList.forEach(function(grocery){
       //     $("ul").append("<li>" + grocery + "</li>");
       // });
