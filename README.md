@@ -43,13 +43,13 @@ _*Your code will be reviewed for the following objectives:*_
   - ** Example Output: 1,2,ping,4,pong
 
 3. Return the returned sequence of numbers displayed as a list item.
-  -** Example Input: 5
-  -** Example Output:
+  **- Example Input: 5
+  - Example Output:
       - 1
       - 2
       - ping
       - 4
-      - pong
+      - pong**
 
 
 4. Develop a function that counts up from 1 in sequence up to the number submitted by the user.
