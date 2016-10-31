@@ -4,8 +4,12 @@
 
 
 function falsey(input) {
-  if (input % 1 != 0) {
+  if (input === NaN) {
+    var response = "response2";
+  } else if (input <= 0) {
     var response = "response1";
+  } else if  (input % 1 != 0) {
+    response = "response3";
   } else {
     return false;
   }
@@ -22,7 +26,6 @@ function sequenceFinal(input) {
   for (var number = 1; number <= length; number++ ) {
     sequenceArray.push(number);
   }
-  console.log(sequenceArray);
 
   var pingArray = [];
 
@@ -60,7 +63,13 @@ $(document).ready(function() {
 
     if (falseyReturn === "response1"){
       $(".falsey").toggle();
-      $(".falsey").text("bruce lee");
+      $(".falsey").text("Even Bruce Lee can't return numbers less than zero");
+    } else if (falseyReturn === "response2"){
+      $(".falsey").toggle();
+      $(".falsey").text("Bruce Lee NaN");
+    } else if (falseyReturn === "response3"){
+      $(".falsey").toggle();
+      $(".falsey").text("Bruce Lee is not going to deal with a fraction of a player, he's only battling players that are all there.");
     } else if (falseyReturn === false){
       $("ul").show();
       $(".display").toggle();
