@@ -4,12 +4,15 @@
 
 
 function falsey(input) {
-  if (input === NaN) {
-    var response = "response2";
-  } else if (input <= 0) {
+  var falseString = input.toString();
+  if (input <= 0) {
+    var response = "response1";
+  } else if (falseString[0] === "-" ) {
     var response = "response1";
   } else if  (input % 1 != 0) {
     response = "response3";
+  } else if (falseString.match(/\W/g, '') = true {
+    var response = "response2";
   } else {
     return false;
   }
