@@ -1,0 +1,8 @@
+function falseyFunction(input) {
+  var falseString = input.toString();
+    if (falseString % 1 !== "NaN") {
+    var greeting = "Only Bruce Lee can respond to fractions (numbers that can be written as fractions), give me a whole number greater than 0. Like the number 1 ranging to infinity and beyond!";
+  } else {
+    greeting = "test of second falsey return statement";
+  }
+}

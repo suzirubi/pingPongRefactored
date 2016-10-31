@@ -1,21 +1,28 @@
 
+
 // business logic
 
 
-function falsey2(input) {
-  if (input % 1 !== 0) {
-    return true;
-  } else if (input % 1 === 0) {
+function falsey(input) {
+  if (input % 1 != 0) {
+    var response = "response1";
+  } else {
     return false;
   }
+
+  var responseFinal = response;
+  return responseFinal;
 }
+
 
 function sequenceFinal(input) {
   var length = input.toString();
+  console.log(input);
   var sequenceArray = [];
   for (var number = 1; number <= length; number++ ) {
     sequenceArray.push(number);
   }
+  console.log(sequenceArray);
 
   var pingArray = [];
 
@@ -48,13 +55,13 @@ $(document).ready(function() {
     $("ul").text("");
 
     var input = parseFloat($("#userInput").val());
-    var falsey = falsey2(input);
+    var falseyReturn = falsey(input);
     var sequence = sequenceFinal(input);
 
-    if (falsey === true){
+    if (falseyReturn === "response1"){
       $(".falsey").toggle();
-      $(".falsey").text("Only Bruce Lee can handle that! Enter a whole number greater than 1.");
-    } else if (falsey === false){
+      $(".falsey").text("bruce lee");
+    } else if (falseyReturn === false){
       $("ul").show();
       $(".display").toggle();
       $(".falsey").hide();
