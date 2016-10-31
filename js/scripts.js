@@ -3,28 +3,23 @@
 // business logic
 
 
-function falsey(input) {
-  var falseString = input.toString();
+
+
+function falsey1(input) {
   if (input <= 0) {
-    var response = "response1";
-  } else if (falseString[0] === "-" ) {
-    var response = "response1";
-  } else if  (input % 1 != 0) {
-    response = "response3";
-  } else if (falseString.match(/\W/g, '') = true {
-    var response = "response2";
+    var responseA = "response1";
+  } else if ((input % 1 != 0) && (input >= 1)) {
+    responseA = "response2";
   } else {
     return false;
   }
-
-  var responseFinal = response;
-  return responseFinal;
+  var responseFinalA = responseA;
+  return responseFinalA;
 }
 
 
 function sequenceFinal(input) {
   var length = input.toString();
-  console.log(input);
   var sequenceArray = [];
   for (var number = 1; number <= length; number++ ) {
     sequenceArray.push(number);
@@ -60,20 +55,41 @@ $(document).ready(function() {
 
     $("ul").text("");
 
+
     var input = parseFloat($("#userInput").val());
-    var falseyReturn = falsey(input);
+    var falseyReturn1 = falsey1(input);
+    var falseyReturn2 = isNaN(input);
+
+    var input = $("#userInput").val();
+
+    function falsey2(input) {
+      var characters = /^[a-zA-Z!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]*$/ ;
+        if (input.match(characters)) {
+        return true;
+      } else {
+      return false;
+      }
+    }
+
+    var falseyReturn3 = falsey2(input);
+
+    var input = parseFloat($("#userInput").val());
+
     var sequence = sequenceFinal(input);
 
-    if (falseyReturn === "response1"){
+    if (falseyReturn1 === "response1"){
       $(".falsey").toggle();
       $(".falsey").text("Even Bruce Lee can't return numbers less than zero");
-    } else if (falseyReturn === "response2"){
+    } else if (falseyReturn1 === "response2"){
       $(".falsey").toggle();
-      $(".falsey").text("Bruce Lee NaN");
-    } else if (falseyReturn === "response3"){
+      $(".falsey").text("Bruce Lee is not going to play with a fraction of a player, he's only battling players that are all there.");
+    } else if (falseyReturn2 === true){
       $(".falsey").toggle();
-      $(".falsey").text("Bruce Lee is not going to deal with a fraction of a player, he's only battling players that are all there.");
-    } else if (falseyReturn === false){
+      $(".falsey").text("Please, enter a whole number either 1 or higher.");
+    } else if (falseyReturn3 === true){
+      $(".falsey").toggle();
+      $(".falsey").text("Symbols");
+    } else if (falseyReturn3 === false){
       $("ul").show();
       $(".display").toggle();
       $(".falsey").hide();
