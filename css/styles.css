@@ -22,18 +22,7 @@
   color: #000;
   radius: 0px;
 }
-.display {
-  display: none;
-  margin-top: 30px;
-}
-.falsey {
-  display: none;
-  margin-top: 20px;
-  margin-left: 20px;
-  font-size: 16px;
-  line-height: 2em;
-  color: #666600;
-}
+
 #list {
   font-size: 16px;
   line-height: 2em;
